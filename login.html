@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dynapuff&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <!-- Lado esquerdo com imagem -->
+    <section class="side login-side">
+      <form id="login-image-form" class="image-form">
+        <label for="login-image-input" class="image-label" tabindex="0" aria-label="Alterar imagem de login">
+          <img alt="Ilustração de dois gatos, um rosa e um azul, lendo um mangá roxo" class="side-image" id="login-image" src="2.png" />
+        </label>
+        <input type="file" id="login-image-input" name="login-image-input" class="hidden" accept="image/*" />
+      </form>
+   
+      <p class="side-text login-text">Acesse sua conta</p>
+    </section>
+
+    <!-- Formulário de login -->
+    <section class="form-side login-form">
+      <form class="form" novalidate>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <input class="input" type="text" name="usuarioEmail" placeholder="Nome de usuário ou Email" required />
+        </label>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-lock"></i></span>
+          <input class="input" type="password" name="senha" placeholder="Senha" required />
+        </label>
+        <button class="btn submit-btn" type="submit">Login</button>
+      </form>
+      <p class="small-text">Ainda não tem uma conta? <a href="cadastro.html">Faça seu cadastro!</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

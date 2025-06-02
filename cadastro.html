@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Cadastro</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dynapuff&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <!-- Lado esquerdo com imagem -->
+    <section class="side cadastro-side">
+      <form id="cadastro-image-form" class="image-form">
+        <label for="cadastro-image-input" class="image-label" tabindex="0" aria-label="Alterar imagem de cadastro">
+          <img alt="Ilustração de dois gatos, um rosa e um azul, lendo um mangá roxo" class="side-image" id="cadastro-image" src="1.png" />
+        </label>
+        <input type="file" id="cadastro-image-input" name="cadastro-image-input" class="hidden" accept="image/*" />
+      </form>
+      <p class="side-text cadastro-text">Cadastre-se já!</p>
+    </section>
+
+    <!-- Formulário de cadastro -->
+    <section class="form-side cadastro-form">
+      <img class="profile-image" src="fotodeperfil.png" alt="Imagem de perfil" />
+      <button class="btn photo-btn" type="button">
+        <i class="fas fa-camera"></i> Alterar foto
+      </button>
+      <form class="form" novalidate>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <input class="input" type="text" name="nome" placeholder="Digite seu nome" required />
+        </label>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <input class="input" type="text" name="usuario" placeholder="Nome de usuário" required />
+        </label>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <input class="input" type="email" name="email" placeholder="Digite seu email" required />
+        </label>
+        <label class="input-label">
+          <span class="icon"><i class="fas fa-lock"></i></span>
+          <input class="input" type="password" name="senha" placeholder="Crie sua senha" required />
+        </label>
+        <button class="btn submit-btn" type="submit">Criar</button>
+      </form>
+      <p class="small-text">Já tem uma conta? <a href="login.html">Faça login!</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

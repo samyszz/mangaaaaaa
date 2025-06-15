@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Dynapuff&display=swap');
+
+
+/* SEM @font-face OU @import AQUI! */
+@font-face {
+    font-family: 'Dynapuff';
+    src: url('img/DynaPuff-VariableFont_wdth,wght.ttf') format('truetype-variations'),
+         url('img/DynaPuff-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 #quem-somos {
-    font-family: 'Dynapuff', cursive;
+    font-family: 'Dynapuff'; /* Usa a fonte 'Dynapuff' definida em styles.css */
     background: #f7f0f8;
     text-align: center;
     padding: 50px 20px;
@@ -66,4 +76,34 @@
     font-weight: bold;
     font-size: 1em;
     color: #000;
+}
+
+body.dark-mode #quem-somos {
+    background: #2a2440;
+    color: #d6c3ff;
+    text-shadow: none;
+}
+
+body.dark-mode #quem-somos h2 {
+    color: #9e78ff;
+    text-shadow: none;
+}
+
+body.dark-mode #quem-somos p {
+    color: #ccc;
+    text-shadow: none;
+}
+
+body.dark-mode .logo h3 {
+    color: #bdaaff;
+    text-shadow: none;
+}
+
+body.dark-mode .membro p {
+    color: #eee;
+}
+
+body.dark-mode .membro img {
+    border-color: #9e78ff;
+    background: #3f3270;
 }
